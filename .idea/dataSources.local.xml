@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails apitester: development" uuid="89d8eb83-5300-4baa-a3f1-84672eeb72b7">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails apitester: test" uuid="af9e0fba-e637-4a44-a92a-b016a1ab792e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails apitester: production" uuid="eecc61e7-1b17-4f23-a57d-0d86093489b7">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>apitester</user-name>
+    </data-source>
+  </component>
+</project>
