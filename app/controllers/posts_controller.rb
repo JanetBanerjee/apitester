@@ -1,6 +1,16 @@
 class PostsController < ApplicationController
   def index
-    graph = Koala::Facebook::GraphAPI.new(@facebook_cookies["access_token"])
-    @likes = graph.get_connections("me", "likes")
+
+  end
+
+  def create
+    user = User.from_omniauth(env["omniauth.auth"])
+    session[:user_id] = user.id
+    redirect_to root_path
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to root_path
   end
 end

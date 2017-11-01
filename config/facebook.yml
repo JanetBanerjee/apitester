@@ -2,3 +2,4 @@ development:
   app_id: 185822845299749
   secret: 9dcd5599fff24bacd185296c54f4971a
   callback_url: http://localhost:3000/
+
