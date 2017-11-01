@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Facebook Auth Example</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div>
-  <% if current_user %>
-      Signed in as <strong><%= current_user.name %></strong>!
-      <%= link_to "Sign out", signout_path, id: "sign_out" %>
-  <% else %>
-      <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-  <% end %>
+<div class="row LoginCard">
+  <div class="col-xs-6 col-xs-offset-3">
+    <%= link_to "Sign in with Facebook",
+                user_facebook_omniauth_authorize_url(),
+                class: "btn btn-lg btn-primary" %>
+  </div>
 </div>
-<%= yield %>
-
-</body>
-</html>

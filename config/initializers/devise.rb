@@ -20,5 +20,8 @@ Devise.setup do |config|
 
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
 
-  config.omniauth :facebook, "APP_ID", "APP_SECRET"
+  config.omniauth :facebook,
+                  ENV["185822845299749"],
+                  ENV["9dcd5599fff24bacd185296c54f4971a"],
+                  scope: 'email,user_likes'
 end
